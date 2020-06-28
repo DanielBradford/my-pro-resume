@@ -1,0 +1,36 @@
+body{
+    color: #ffffff;
+}
+.header-container{
+    background-color: #111111;
+}
+.navbar {
+    text-align: left;
+    margin-top: 30px;
+    margin-right: 0;
+    padding-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+.menu{
+    list-style-type: none;
+}
+
+.headshot img{
+    width: 100%;
+    margin: 30px;
+    border-radius: 30%;
+}
+
+.social-media{
+    margin: auto 0;
+}
+.social-media a{
+letter-spacing: 30px;
+text-decoration: none;
+}
