@@ -1,36 +1,136 @@
-body{
-    color: #ffffff;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,500;1,600;1,700&display=swap');
+
+body {
+    font-family: "Raleway", sans-serif;
+  color: rgb(0, 0, 0);
 }
-.header-container{
-    background-color: #111111;
+.header-container {
+  height: 100vh;
+  background: url(../images/top-background.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-content {
+    margin-top: 10px;
+}
+.header-container h1{
+    font-size: 4em;
+    letter-spacing: 3px;
+}
+.header-container h2{
+    font-size: 2.4em;
+    font-weight: 200;
+}
+.title{
+    padding-left: 5em;
+}
+#menu {
+    padding-right: 3em;
 }
 .navbar {
-    text-align: left;
-    margin-top: 30px;
-    margin-right: 0;
-    padding-right: 20px;
+  text-align: right;
+  margin-right: 0;
+  padding-top: 0;
+  padding-right: 20px;
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #fff;
-    display: inline-block;
-    width: 100%;
-}
-.menu{
-    list-style-type: none;
-}
-
-.headshot img{
-    width: 100%;
-    margin: 30px;
-    border-radius: 30%;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  width: 100%;
+  font-size: 2em;
+  font-weight: 300;
 }
 
-.social-media{
-    margin: auto 0;
+.navbar a:hover{
+
+    text-decoration: underline;
+    color: rgba(82, 80, 80, 0.863);
+
 }
-.social-media a{
-letter-spacing: 30px;
-text-decoration: none;
+
+
+.menu {
+  list-style-type: none;
+}
+
+.headshot img {
+  width:80%;
+  margin-left: 30px;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border: solid 1.5px #ffffff;
+}
+.about-me{
+    padding: 30px;
+    text-align: center;
+    height: auto;
+}
+.about-text {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.137);
+    text-align: center;
+    font-size: 1.5em;
+
+}
+.social-media {
+  margin: auto 0;
+}
+.social-media a {
+  letter-spacing: 30px;
+  text-decoration: none;
+}
+
+.yellow {
+  height: 100vh;
+  background: url(../images/background.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-top: solid 4px #ffff;
+  color: #ffffff;
+  text-align: center;
+  
+}
+
+.blue {
+  height: 120vh;
+  background: url(../images/top-background.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: rgb(61, 58, 58);
+}
+
+footer {
+
+    height: auto;
+  background: url(../images/background.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #ffffff;
 }
