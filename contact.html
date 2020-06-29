@@ -22,25 +22,30 @@
   <body>
     <header>
       <div class="header-container">
-        <div class="row">
-          <div class="col-8">
+        <div class="row header-content">
+          <div class="col-8 title">
             <h1>Daniel Bradford</h1>
-            <h2>Full-Stack | Front-End | Back-End Developer</h2>
+            <h2>
+              Front-End | Back-End |
+              <span class="mustard">Full-Stack Developer</span>
+            </h2>
           </div>
-          <div class="col-4 summary">
+          <div class="col-4" id="menu">
             <nav class="navbar">
               <ul class="menu">
                 <a href="index.html">
-                  <li>Home</li>
+                  <li>Home <i class="fas fa-home"></i></li>
                 </a>
-                <a href="#">
-                  <li>About Me</li>
+                <a href="#about">
+                  <li>About Me <i class="fas fa-info-circle"></i></li>
                 </a>
-                <a href="#">
-                  <li>Resume</li>
+                <a href="#resume">
+                  <li>Resume <i class="far fa-file"></i></li>
                 </a>
-                <a href="#">
-                  <li>Contact Me</li>
+                <a class="active" href="contact.html">
+                  <li class="active">
+                    Contact Me <i class="fas fa-comments"></i>
+                  </li>
                 </a>
               </ul>
             </nav>
@@ -50,49 +55,139 @@
     </header>
 
     <main>
-        <div class="row container-fluid blue">
-            <div class="about-container">
-                <div class="col-4 headshot">
-                    <ul>
-                        <li>Telephone <i class="fab fa-phone"></i></li>
-                        <li>Email <i class="fas fa-envelope-open-text"></i></li>
-                        <li>GitHub <i class="fab fa-github"></i></li>
-                    
-                    </ul>
-                 </div>
-                <div class="col-8 about-text">
-                    <h2>Contact Me</h2>
-                    <p>
-                            Fresh and creative, Daniel is a highly sdvasdbv sdv kds GK GASH
-                            GSAK AS KAS CS KGDS G SD SKDVSHLID
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row container-fluid yellow">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-        </div>
+      <div class="row no-gutters container-fluid yellow-divide">
+        <h2>Contact Me <i class="fas fa-info-circle"></i></h2>
+        <br />
+        <p>
+          Telephone: +44 77295 99407
+          <br />
+          <br />
+          Email: danielbradford@hotmail.co.uk
+        </p>
+      </div>
+      <div class="row no-gutters container-fluid yellow"></div>
     </main>
 
     <footer>
       <div class="container-fluid about-container">
         <div class="row social-media about-container">
-          <a href="#"
-            ><span><i class="fa fa-instagram"></i></span
-          ></a>
-          <a href="#"
-            ><span><i class="fa fa-facebook-square"></i></span
-          ></a>
-          <a href="#"
-            ><span><i class="fa fa-linkedin"></i></span
-          ></a>
-          <a href="#"
-            ><span><i class="fa fa-envelope-square"></i></span
-          ></a>
+          <div class="col-4 social-icons">
+            <a href="#"
+              ><span><i class="fab fa-instagram"></i></span
+            ></a>
+            <a href="#"
+              ><span><i class="fab fa-facebook-square"></i></span
+            ></a>
+            <a href="#"
+              ><span><i class="fab fa-linkedin"></i></span
+            ></a>
+            <br />
+            by Daniel Bradford Creative Design ©
+          </div>
+          <div class="col-8 badges">
+            <span
+              ><img
+                class="round"
+                src="data:image/png;base64,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"
+                alt=""
+            /></span>
+            <span
+              ><img
+                class="round"
+                src=" data:image/jpeg;base64,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"
+                alt=""
+            /></span>
+            <span><img src="assets/images/brand-badge.png" alt="" /></span>
+            <span><img src="assets/images/cyber-badge.png" alt="" /></span>
+            <span><img src="assets/images/coach-badge.png" alt="" /></span>
+          </div>
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col">Institute</th>
+                  <th scope="col">Qualification</th>
+                  <th scope="col">Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Coding Institute</td>
+                  <td>Level 5. Diploma - Full Stack Development</td>
+                  <td>May 2020 - Present</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>German (A1 - B2)</td>
+                  <td>Team Leader</td>
+                  <td>Professional Dancer</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>HTML/HTML5</td>
+                  <td>Creativity</td>
+                  <td>Worked on a Hollywood Film</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>CSS/CSS3</td>
+                  <td>Driven</td>
+                  <td>Can complete a Rubix cube within 3 mins</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Javascript</td>
+                  <td>Logical</td>
+                  <td>Worked as Stunt Double</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>React</td>
+                  <td></td>
+                  <td>Worked on a Hollywood Film</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
