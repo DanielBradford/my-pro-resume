@@ -5,7 +5,7 @@ body {
   color: rgba(58, 58, 58, 0.863);
 }
 .header-container {
-  height: 100vh;
+  height: 88vh;
   background: url(../images/top-background.jpg) no-repeat bottom right fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,12 +16,52 @@ body {
   justify-content: center;
   position: relative;
 }
+.chevron i, 
+.chevron a{
+    font-size: 1.5em;
+    color: rgb(219, 166, 0);
+}
+
+.chevron-up{
+    padding: 10px;
+    text-align: center;
+    display: inline;
+}
+.chevron-up,
+.chevron-up i,
+.chevron-up a {
+    text-align: center;
+    color: rgb(219, 166, 0)
+}
+
+.chevron-up:hover,
+.chevron i:hover{
+color: #fff;
+text-decoration: underline;
+}
+
+.chevron-skills i{
+    position:relative; 
+    top: 9.8em;
+    right: 3.2em;
+    font-size: 2em;
+    color: rgb(219, 166, 0);
+}
+
+.chevron-skills i:hover{
+    color: #fff;
+}
 
 .mustard{
     color: rgb(219, 166, 0);
 }
+.steel{
+    color: rgba(58, 58, 58, 0.863);
+}
 .header-content {
     margin-top: 10px;
+    position: relative;
+    bottom: 50px;
 }
 .header-container h1{
     font-size: 4em;
@@ -58,10 +98,32 @@ body {
 
     text-decoration: underline;
     background-color: rgba(58, 58, 58, 0.863);
+    border-radius: 2em;
     color: #fff;
-
 }
 
+.modal-header{
+    color: rgba(58, 58, 58, 0.74);
+    font-size: 3em;
+}
+.modal-body table{
+    color: rgba(255, 255, 255, 0.959);
+    background-color: rgba(58, 58, 58, 0.74);
+    border-radius: 2em;
+}
+
+/* {
+    color: rgba(58, 58, 58, 0.74);
+    background-color: #fff;
+} */
+
+.table a{
+    text-decoration: none;
+    color: #fff;
+}
+.table a:hover{
+    color: rgb(219, 166, 0);
+}
 .active{
     color: rgb(219, 166, 0);
 }
@@ -69,6 +131,30 @@ body {
   list-style-type: none;
 }
 
+.dropright .dropdown-menu{
+
+    text-align: right;
+}
+
+.dropleft .dropdown-menu {
+    text-align: left;
+}
+
+.btn-primary{
+        color: #013751;
+    background-color: #deaa00;
+    border-color: #ffffff;
+}
+
+.btn-primary:hover{
+    background-color: rgba(58, 58, 58, 0.863);
+    color: #deaa00;
+}
+.btn-primary:active{
+background-color: rgba(58, 58, 58, 0.863);
+    color: #deaa00;
+
+}
 .menu i{
     color: rgb(219, 166, 0);
    font-size: .5em;
@@ -76,7 +162,8 @@ body {
 
 .headshot img {
   width:80%;
-  margin-left: 30px;
+  margin: 0;
+  padding: 0;
   border-top-left-radius: 30%;
   border-bottom-right-radius: 30%;
   border-bottom-left-radius: 30%;
@@ -87,15 +174,43 @@ body {
     padding: 30px;
     text-align: center;
     height: auto;
+    color: rgb(219, 166, 0);
 }
 .about-text {
     width: 50%;
-    background-color: rgba(153, 168, 189, 0.65);
+    color: #fff;
+    background-color: rgba(153, 168, 189, 0.75);
     text-align: center;
     font-size: 1.5em;
-    height: 650px;;
+    font-weight: 200;
+    height: 450px;;
     border-radius: .5em;
+    overflow: scroll;
+    letter-spacing: .1em;
 
+}
+
+.btn-skills{
+    color: #fff;
+    border-radius: 50%;
+    margin: 5px;
+    border: solid rgb(219, 166, 0) 5px;
+}
+
+.btn-skills h3{
+    color:rgb(219, 166, 0) 5px;
+
+
+}
+
+.split-section{
+    align-items: center;
+    text-align: center;
+    height: 100px;
+}
+
+.contact-details{
+    font-size: 2.5em;
 }
 .social-media {
   margin: auto 0;
@@ -103,6 +218,24 @@ body {
 .social-media a {
   letter-spacing: 30px;
   text-decoration: none;
+}
+
+.code {
+    height: auto;
+  background: url(../images/code.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border-bottom-right-radius: 30%;
+
 }
 
 .yellow {
@@ -115,15 +248,27 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  border-top: solid 4px #ffff;
   color: #ffffff;
   text-align: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
   
 }
 
 .yellow-divide{
-    height: 20vh;
+    height: auto;
   background-color: #ffffff;
+}
+
+.yellow-divide h2 {
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+    color: rgba(58, 58, 58, 0.863);
+}
+.yellow-divide i {
+    color: rgb(219, 166, 0);
 }
 .yellow-divide h3{
         background-color: #ffffff;
@@ -134,15 +279,27 @@ body {
     opacity: .5;
 }
 
-
 .table{
-
     color: #ffffff;
 }
 
-.yellow .skills {
-    padding: 90px;
+.skills {
+    padding: 70px;
+    padding-left: 90px;
+    padding-bottom: 0;
     color: #ffffff;
+    text-align: center;
+}
+
+.skills table{
+
+color: white;
+background-color: rgba(153, 168, 189, 0.85);
+border-radius: 2em;
+padding: 50px;
+margin-left: 50px;
+font-size: 1.2em;
+font-weight: 400;
 }
 
 .education{
@@ -172,10 +329,27 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  color: rgb(61, 58, 58)
+  color: rgb(61, 58, 58);
+  padding: 50px;
+  padding-right: 65px;
+  padding-bottom: 100px;
+ margin: 0;
+}
 
+.blue-footer{
+     height: auto;
+  background: url(../images/top-background.jpg) no-repeat bottom right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: rgb(61, 58, 58);
 
 }
+
 .contact-container{
   height: auto;
   background: url(../images/contact.jpg) no-repeat bottom right fixed;
@@ -187,6 +361,28 @@ body {
   justify-content: center;
   position: relative;
   color: rgb(61, 58, 58);
+}
+.contact .yellow a{
+    text-decoration: none;
+    color: #fff;
+}
+.resume-medal{
+    color: rgb(219, 166, 0);
+    background-color: #ffffffbd;
+    border-radius: 50%;
+    padding: 8em;
+    border: solid 4px rgb(219, 166, 0);
+    text-decoration: none;
+}
+.resume-medal i{
+    font-size: 3em;
+}
+
+.resume-medal:hover{
+    text-decoration: none;
+    background-color: rgba(61, 58, 58, 0.719);
+    color: #fff;
+    border-color: #fff;
 }
 
 footer {
